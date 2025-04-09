@@ -40,7 +40,7 @@
 }
 
 .reactLogo {
-  will-change: filter;
+  /* will-change: filter; */
   transition: filter 300ms;
 }
 
@@ -48,6 +48,7 @@
   will-change: filter;
   transition: filter 300ms;
   border: solid .1px black;
+  animation: logo-spin infinite 20s linear;
 }
 
 .reactLogoContainerDiv:hover {
@@ -70,6 +71,6 @@
 } */
 
 
-.reactLogo {
+/* .reactLogo {
   animation: logo-spin infinite 20s linear;
-}
+} */
