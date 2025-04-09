@@ -63,12 +63,12 @@
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   .reactLogo {
     animation: logo-spin infinite 20s linear;
   }
-}
-
-/* .reactLogo {
-  animation: logo-spin infinite 20s linear;
 } */
+
+.reactLogo {
+  animation: logo-spin infinite 20s linear;
+}
