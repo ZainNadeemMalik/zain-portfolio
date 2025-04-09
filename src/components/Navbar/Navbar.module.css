@@ -58,8 +58,6 @@ z-index: 9999;
 .moonButtonMsg {
   display: none;
   position: absolute;
-  top: 0;
-  left: 0;
   top: 100%;
   left: 50%;
   padding: 5px;
@@ -74,6 +72,12 @@ z-index: 9999;
   transform: translateX(-50%);
   z-index: 999999;
   white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .moonButtonMsg {
+    transform: translateX(-90%);
+  }
 }
 
 /* .moonButtonContainer:hover .moonButtonMsg {
