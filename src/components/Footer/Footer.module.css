@@ -1,0 +1,74 @@
+.footer {
+  border-top: hsl(0, 0%, 30%) solid 1px;
+  text-align: center;
+}
+
+.wrapper {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.footerLinkContainer {
+  display: grid;
+  place-items: center;
+}
+
+.footer a {
+  text-decoration: none;
+  color: hsl(0, 0%, 70%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer a:hover {
+  color: white;
+}
+
+.reactLogoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.reactLogoContainer p {
+  text-transform: capitalize;
+  color: hsl(0, 0%, 70%);
+}
+
+.reactLogo {
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.reactLogoContainerDiv {
+  will-change: filter;
+  transition: filter 300ms;
+  border: solid .1px black;
+}
+
+.reactLogoContainerDiv:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .reactLogo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* .reactLogo {
+  animation: logo-spin infinite 20s linear;
+} */

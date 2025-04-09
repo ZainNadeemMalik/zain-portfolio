@@ -1,0 +1,39 @@
+.workAndEduCard {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  border: solid 1px hsl(0, 0%, 30%);
+  border-radius: 0.5rem;
+  margin-block: 1rem;
+}
+
+.workAndEduCardImgContainer > img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.workAndEduCardText {
+  display: grid;
+  gap: 1rem;
+  color: hsl(0, 0%, 70%);
+  font-weight: var(--fw-light);
+  padding-inline: 1rem;
+}
+
+.workAndEduCardTitleText {
+  display: grid;
+  gap: .25rem;
+}
+
+.workAndEduCardTitleText > h3 {
+  font-weight: var(--fw-bold);
+  color: white;
+}
+
+.workAndEduCardTitleText > p {
+  font-size: var(--fs-sm);
+}
+
+.workAndEduCardDescription {
+  font-weight: var(--fw-regular);
+}

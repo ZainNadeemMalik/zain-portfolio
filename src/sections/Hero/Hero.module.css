@@ -1,0 +1,139 @@
+.hero {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  /* margin-block: 3rem; */
+  /* border: solid blue; */
+  /* opacity: 0; */
+}
+
+@media(max-width: 768px) {
+  .hero {
+    animation: fadeIn 1s ease-out forwards;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.heroText {
+  /* border: solid green; */
+  /* max-width: 65ch; */
+  display: grid;
+  gap: 1rem;
+  margin-right: auto;
+}
+
+.titleContainer {
+  display: flex;
+  align-items: center;
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-black);
+  /* margin-bottom: 1rem; */
+  /* outline: solid red; */
+}
+
+@media (max-width:768px) {
+  .titleContainer {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+.heroDescription {
+  font-weight: var(--fw-light);
+  /* font-size: 1.5rem; */
+  max-width: 50ch;
+  line-height: 1.5;
+  color: hsl(0, 0%, 70%);
+  /* margin-bottom: 1rem; */
+  /* outline: solid red; */
+}
+
+.wavingHand {
+  display: inline-block;
+  transform-origin: center bottom; /* Ensures rotation happens at the wrist */
+  cursor: default;
+}
+
+.wavingHand:hover {
+  animation: wave 1.5s ease-in-out infinite;
+}
+
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  20% { transform: rotate(15deg); }
+  40% { transform: rotate(-10deg); }
+  60% { transform: rotate(15deg); }
+  80% { transform: rotate(-10deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.resumeAndSocialsContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 0 0px rgba(255, 255, 255, 0);
+  transition: box-shadow 0.4s ease;
+}
+
+.active {
+  box-shadow: 0 0 10px rgba(255, 255, 255);
+}
+
+.resumeAndSocialsContainer > a {
+  text-decoration: none;
+  color: white;
+  font-weight: var(--fw-bold);
+}
+
+.resume {
+  border: solid 1px hsl(0, 0%, 30%);
+  border-radius: .25rem;
+  padding: .5em 1em;
+}
+
+.resume:hover {
+  background-color: hsl(0, 0%, 30%);
+}
+
+@media (max-width: 768px) {
+  .gmailDesktopLink {
+    display: none;
+  }
+}
+
+/* Hide the mailto on desktop */
+@media (min-width: 769px) {
+  .gmailMobileLink {
+    display: none;
+  }
+}
+
+.openForWork {
+  font-weight: var(--fw-bold);
+}
+
+.heroImg {
+  /* border: solid blue; */
+  display: grid;
+  place-items: grid-end;
+  /* border: solid red; */
+  /* margin-left: auto; */
+
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-wrap: wrap-reverse;
+  }
+}

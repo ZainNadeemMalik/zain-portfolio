@@ -1,0 +1,83 @@
+header {
+background-color: red;
+position: sticky;
+top: 0;
+background-color: rgba(0, 0, 0, 0.7);
+backdrop-filter: blur(10px);               /* the magic blur */
+-webkit-backdrop-filter: blur(10px); 
+z-index: 9999;
+}
+
+
+.nav {
+  max-width: 768px;
+  margin: 0 auto;
+
+}
+
+.navUl {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  /* border: solid; */
+  padding-right: 1rem;
+}
+
+.navUl > li:last-child {
+  /* padding: 1rem; */
+  margin-left: auto;
+}
+
+.navUl > li > a {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 70%);
+  padding: 1rem;
+  /* border: solid; */
+}
+
+.navUl > li > a:hover {
+  color: white;
+  /* box-shadow: ; */
+  /* box-shadow: 0 4px 6px -1px rgba(255, 255, 255, 1); */
+  box-shadow: 0 4px 0 0 white;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.moonButtonContainer {
+  position: relative;
+  /* border: solid 1px; */
+}
+
+.moonButton {
+  cursor: pointer;
+  /* background: none; */
+}
+
+.moonButtonMsg {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  top: 100%;
+  left: 50%;
+  padding: 5px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  width: max-content;
+  margin-top: 5px;
+  transform: translateX(-50%);
+  z-index: 999999;
+  white-space: nowrap;
+}
+
+/* .moonButtonContainer:hover .moonButtonMsg {
+  display: block;
+} */
+
+.moonButtonContainer:focus-within  .moonButtonMsg {
+  display: block;
+}

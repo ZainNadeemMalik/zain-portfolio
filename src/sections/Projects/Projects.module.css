@@ -1,0 +1,16 @@
+.projectsSection {
+  border-top: 1px solid hsl(0, 0%, 30%);
+}
+
+.wrapper {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.wrapper > h2 {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-bold);
+  text-align: center;
+  margin-bottom: 2rem;
+}

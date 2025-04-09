@@ -1,0 +1,95 @@
+.project {
+  padding: 1rem;
+  border: solid 1px hsl(0, 0%, 30%);
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.project::after {
+  content: "";
+  background: linear-gradient(
+    transparent,
+    mediumslateblue,
+    transparent
+  );
+  height: 70px;
+  width: 1px;
+  position: absolute;
+  left: -1px;
+  top: 65%;
+  transition: top 600ms ease,
+              opacity 600ms ease;
+  opacity: 0;
+}
+
+.project:hover::after {
+  top: 25%;
+  opacity: 1;
+}
+
+.project:hover img {
+  transform: scale(1.1);
+}
+
+.projectImgContainer {
+  overflow: hidden;
+}
+
+.project img {
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project img:hover {
+  overflow: hidden;
+}
+
+.project h3 {
+  font-size: var(--fs-md);
+  font-weight: var(--fw-bold);
+  margin-bottom: .25rem;
+}
+
+.project p {
+  color: hsl(0, 0%, 70%);
+}
+
+.project a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  font-weight: var(--fw-bold);
+  padding: .5em 1em;
+  border-radius: .25rem;
+  background-color: white;
+}
+
+.project a:hover {
+  background-color: hsl(0, 0%, 70%);
+}
+
+.projectText {
+  padding-top: .5rem;
+}
+
+
+.projectText > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+.technologies p {
+  text-transform: capitalize;
+  border: solid 1px hsl(0, 0%, 30%);
+  border-radius: .5rem;
+  padding: .25em .75em;
+  color: white;
+  background-color: hsl(0, 0%, 30%);
+}
