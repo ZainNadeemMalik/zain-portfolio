@@ -16,6 +16,7 @@ export const Technologies = () => {
           <p>Express.js</p>
           <p>SQL</p>
           <p>PostgreSQL</p>
+          <p>MongoDB</p>
           <p>Git/Github</p>
           <p>Tailwind</p>
         </div>
