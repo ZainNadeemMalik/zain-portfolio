@@ -17,7 +17,7 @@ export const Hero = ({ isActive }) => {
         <p className={styles.openForWork}>Contact for work:</p>
 
         <div className={`${styles.resumeAndSocialsContainer} ${isActive ? styles.active: ""}`}>
-          <a href="/Zain_Malik_Frontend_Resume.pdf" download="Zain_Malik_Developer_Resume" className={styles.resume}>Resume</a>
+          <a href="/Zain_Malik_FullStack_Resume.pdf" download="Zain_Malik_Developer_Resume" className={styles.resume}>Resume</a>
           <a href="https://github.com/ZainNadeemMalik" target="_blank" rel="noopener noreferrer" title="Github">
             <img src="./github-logo.png" alt="github-icon" width={30} height={30} />
           </a>
